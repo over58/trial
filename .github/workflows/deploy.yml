@@ -20,9 +20,9 @@ jobs:
         with:
           # npm cache files are stored in `~/.npm` on Linux/macOS
           path: ~/.npm
-          key: ${{ runner.os }}-build-${{ hashFiles('**/yarn-lock.json') }}
+          key: ${{ runner.os }}-build-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
-            ${{ runner.os }}-build-${{ hashFiles('**/yarn-lock.json') }}
+            ${{ runner.os }}-build-${{ hashFiles('**/yarn.lock') }}
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
