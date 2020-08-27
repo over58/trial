@@ -1,16 +1,28 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Router from 'vue-router'
 import routes from './routes.js'
-import Conttaienr from '../App.vue'
-Vue.use(VueRouter)
+import Container from '../views/Container.vue'
+Vue.use(Router)
 
-export default new VueRouter({
+export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '/trial',
-      component: Conttaienr,
-      children: [...routes]
+      path: '/',
+      redirect: '/home'
+    },
+    {
+      path: '/home',
+      name: 'home',
+      component: Container,
+      children: [
+        ...routes
+      ]
+    },
+    {
+      path: '/qrcode',
+      name: 'qrcode',
+      component: () => import('../views/npm/qrcode/Index.vue')
     }
   ]
 })
