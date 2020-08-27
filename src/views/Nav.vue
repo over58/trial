@@ -1,5 +1,5 @@
 <template>
-  <h2>Nav</h2>
+  <h2>Nav导航栏</h2>
 </template>
 
 <script>
