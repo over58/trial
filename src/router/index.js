@@ -8,10 +8,9 @@ export default new VueRouter({
   mode: 'history',
   routes: [
     {
-      path: '/',
-      name: 'Container',
+      path: '/trial',
       component: Conttaienr,
-      children: routes
+      children: [...routes]
     }
   ]
 })
