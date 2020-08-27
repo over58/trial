@@ -1,4 +1,4 @@
-# tiral2
+# trial
 
 ## Project setup
 ```
