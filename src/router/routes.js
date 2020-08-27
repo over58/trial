@@ -2,6 +2,11 @@ export default [
   {
     path: '',
     name: 'Nav',
-    component: () => import(/* webpackChunkName */ '../views/Nav.vue')
+    component: () => import('../views/Nav.vue')
+  },
+  {
+    path: '/qrcode',
+    name: 'qrcode',
+    component: () => import('../views/npm/qrcode/Index.vue')
   }
 ]
