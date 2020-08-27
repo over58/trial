@@ -22,6 +22,7 @@ jobs:
           path: ~/.npm
           key: ${{ runner.os }}-build-${{ hashFiles('**/yarn-lock.json') }}
           restore-keys: |
+            ${{ runner.os }}-build-${{ hashFiles('**/yarn-lock.json') }}
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
