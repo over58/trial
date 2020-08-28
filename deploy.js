@@ -6,7 +6,7 @@ const argv = require('minimist')(process.argv.slice(2))
 
 spinner.text = 'loading'
 spinner.color = 'yellow'
-const message = argv.m || 'feat: update article'
+const message = argv.m || argv._[0] || 'feat: update article'
 const commands = [
   'git add .',
   `git commit -m "${message}"`,
