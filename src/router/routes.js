@@ -14,5 +14,10 @@ export default [
     path: 'vertical-align',
     name: 'vertical-align',
     component: () => import('@views/css/vertical-align.vue')
+  },
+  {
+    path: 'sector',
+    name: 'sector',
+    component: () => import('@views/css/sector.vue')
   }
 ]
