@@ -2414,9 +2414,9 @@ chalk@^3.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chalk@^4.1.0:
+chalk@^4.0.0, chalk@^4.1.0:
   version "4.1.0"
-  resolved "https://registry.npm.taobao.org/chalk/download/chalk-4.1.0.tgz?cache=0&sync_timestamp=1591687042638&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fchalk%2Fdownload%2Fchalk-4.1.0.tgz#4e14870a618d9e2edd97dd8345fd9d9dc315646a"
+  resolved "https://r.cnpmjs.org/chalk/download/chalk-4.1.0.tgz#4e14870a618d9e2edd97dd8345fd9d9dc315646a"
   integrity sha1-ThSHCmGNni7dl92DRf2dncMVZGo=
   dependencies:
     ansi-styles "^4.1.0"
@@ -2539,7 +2539,7 @@ cli-highlight@^2.1.4:
     parse5-htmlparser2-tree-adapter "^5.1.1"
     yargs "^15.0.0"
 
-cli-spinners@^2.0.0:
+cli-spinners@^2.0.0, cli-spinners@^2.4.0:
   version "2.4.0"
   resolved "https://registry.npm.taobao.org/cli-spinners/download/cli-spinners-2.4.0.tgz?cache=0&sync_timestamp=1595080390100&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcli-spinners%2Fdownload%2Fcli-spinners-2.4.0.tgz#c6256db216b878cfba4720e719cec7cf72685d7f"
   integrity sha1-xiVtsha4eM+6RyDnGc7Hz3JoXX8=
@@ -5189,6 +5189,11 @@ is-glob@^4.0.0, is-glob@^4.0.1, is-glob@~4.0.1:
   dependencies:
     is-extglob "^2.1.1"
 
+is-interactive@^1.0.0:
+  version "1.0.0"
+  resolved "https://r.cnpmjs.org/is-interactive/download/is-interactive-1.0.0.tgz#cea6e6ae5c870a7b0a0004070b7b587e0252912e"
+  integrity sha1-zqbmrlyHCnsKAAQHC3tYfgJSkS4=
+
 is-number@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/is-number/download/is-number-3.0.0.tgz#24fd6201a4782cf50561c810276afc7d12d71195"
@@ -5761,6 +5766,13 @@ log-symbols@^3.0.0:
   dependencies:
     chalk "^2.4.2"
 
+log-symbols@^4.0.0:
+  version "4.0.0"
+  resolved "https://r.cnpmjs.org/log-symbols/download/log-symbols-4.0.0.tgz#69b3cc46d20f448eccdb75ea1fa733d9e821c920"
+  integrity sha1-abPMRtIPRI7M23XqH6cz2eghySA=
+  dependencies:
+    chalk "^4.0.0"
+
 log-update@^2.3.0:
   version "2.3.0"
   resolved "https://registry.npm.taobao.org/log-update/download/log-update-2.3.0.tgz#88328fd7d1ce7938b29283746f0b1bc126b24708"
@@ -5995,9 +6007,14 @@ minimatch@^3.0.4:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimist@^1.2.0, minimist@^1.2.5:
+minimist@^1.2.0:
   version "1.2.5"
   resolved "https://registry.npm.taobao.org/minimist/download/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
+  integrity sha1-Z9ZgFLZqaoqqDAg8X9WN9OTpdgI=
+
+minimist@^1.2.5:
+  version "1.2.5"
+  resolved "https://r.cnpmjs.org/minimist/download/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha1-Z9ZgFLZqaoqqDAg8X9WN9OTpdgI=
 
 minipass-collect@^1.0.2:
@@ -6468,6 +6485,20 @@ ora@^3.4.0:
     cli-spinners "^2.0.0"
     log-symbols "^2.2.0"
     strip-ansi "^5.2.0"
+    wcwidth "^1.0.1"
+
+ora@^5.0.0:
+  version "5.0.0"
+  resolved "https://r.cnpmjs.org/ora/download/ora-5.0.0.tgz#4f0b34f2994877b49b452a707245ab1e9f6afccb"
+  integrity sha1-Tws08plId7SbRSpwckWrHp9q/Ms=
+  dependencies:
+    chalk "^4.1.0"
+    cli-cursor "^3.1.0"
+    cli-spinners "^2.4.0"
+    is-interactive "^1.0.0"
+    log-symbols "^4.0.0"
+    mute-stream "0.0.8"
+    strip-ansi "^6.0.0"
     wcwidth "^1.0.1"
 
 original@^1.0.0:

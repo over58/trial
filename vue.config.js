@@ -21,13 +21,13 @@ module.exports = {
       ? 'cheap-module-eval-source-map'
       : 'hidden-source-map'
 
-    config.resolve = {
-      alias: {
-        '@': resolve('src'),
-        '@views': resolve('src/views'),
-        '@com': resolve('src/components'),
-        '@utils': resolve('src/utils')
-      }
+    config.resolve.alias = {
+      '@': resolve('src'),
+      '@views': resolve('src/views'),
+      '@com': resolve('src/components'),
+      '@utils': resolve('src/utils')
     }
+
+    config.resolve.extensions = ['.vue', '.ts', '.js', '.less', '.css', '.png']
   }
 }

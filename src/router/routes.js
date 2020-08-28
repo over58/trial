@@ -8,5 +8,11 @@ export default [
     path: 'clipboard',
     name: 'clipboard',
     component: () => import('@views/npm/clipboard/Index.vue')
+  },
+  // css
+  {
+    path: 'vertical-align',
+    name: 'vertical-align',
+    component: () => import('@views/css/vertical-align.vue')
   }
 ]
