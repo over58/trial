@@ -9,12 +9,12 @@ spinner.color = 'yellow'
 const message = argv.m || 'feat: update article'
 const commands = [
   'git add .',
-    `git commit -m "${message}"`,
-    'git push'
+  `git commit -m "${message}"`,
+  'git push'
 ]
 
 commands.forEach((command) => {
   execSync(command)
 })
 
-spinner.succeed(chalk.green('success! commit-msg:' + message))
+spinner.succeed(chalk.green('success!\n') + chalk.yellow('commit - msg:' + message))
