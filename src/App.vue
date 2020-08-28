@@ -14,6 +14,9 @@ export default {
 </script>
 
 <style lang="less">
+html,body,#app{
+  height: 100%;
+}
 #app{
   color: #000;
 }

@@ -9,10 +9,6 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/home/qrcode'
-    },
-    {
-      path: '/home',
       name: 'home',
       component: Container,
       children: [
@@ -20,9 +16,8 @@ export default new Router({
       ]
     },
     {
-      path: '/qrcode',
-      name: 'qrcode',
-      component: () => import('../views/npm/qrcode/Index.vue')
+      path: '*',
+      redirect: '/'
     }
   ]
 })
