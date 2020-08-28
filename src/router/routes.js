@@ -19,5 +19,10 @@ export default [
     path: 'sector',
     name: 'sector',
     component: () => import('@views/css/sector.vue')
+  },
+  {
+    path: 'ease',
+    name: 'ease',
+    component: () => import('@views/css/ease.vue')
   }
 ]
