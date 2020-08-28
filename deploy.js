@@ -17,4 +17,4 @@ commands.forEach((command) => {
   execSync(command)
 })
 
-spinner.succeed(chalk.green('success!'))
+spinner.succeed(chalk.green('success! commit-msg:' + message))
