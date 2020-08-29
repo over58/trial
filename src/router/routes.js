@@ -1,4 +1,4 @@
-export default [
+var routes = [
   {
     path: '',
     name: 'qrcode',
@@ -26,3 +26,10 @@ export default [
     component: () => import('@views/css/ease.vue')
   }
 ]
+
+routes.map(x => {
+  x.path = 'trial/' + x.path
+  return x
+})
+
+export default routes
