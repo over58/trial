@@ -24,5 +24,15 @@ export default [
     path: 'ease',
     name: 'ease',
     component: () => import('@views/css/ease.vue')
+  },
+  {
+    path: 'testvue',
+    name: 'testvue',
+    component: () => import('@views/testvue.vue')
+  },
+  {
+    path: 'flex-scroll',
+    name: 'flex-scroll',
+    component: () => import('@views/css/flex-scroll.vue')
   }
 ]
