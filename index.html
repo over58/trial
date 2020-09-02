@@ -1,1 +1,58 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/trial/favicon.ico><title>trial</title><link href=/trial/static/css/chunk-5b44358a.9a879972.css rel=prefetch><link href=/trial/static/css/chunk-5e808d09.bbb993f6.css rel=prefetch><link href=/trial/static/css/chunk-d2ae3d12.d62525a5.css rel=prefetch><link href=/trial/static/js/chunk-2d0e1782.c6e22c08.js rel=prefetch><link href=/trial/static/js/chunk-3e15a119.b68d0909.js rel=prefetch><link href=/trial/static/js/chunk-5ad2e4dc.edd36a0e.js rel=prefetch><link href=/trial/static/js/chunk-5b44358a.b643ec00.js rel=prefetch><link href=/trial/static/js/chunk-5e808d09.c0c732cc.js rel=prefetch><link href=/trial/static/js/chunk-6e96eba8.79416325.js rel=prefetch><link href=/trial/static/js/chunk-d2ae3d12.1d1ebfde.js rel=prefetch><link href=/trial/static/css/chunk-vendors.08810481.css rel=preload as=style><link href=/trial/static/css/index.733eb7dd.css rel=preload as=style><link href=/trial/static/js/chunk-vendors.73b9b66f.js rel=preload as=script><link href=/trial/static/js/index.18157136.js rel=preload as=script><link href=/trial/static/css/chunk-vendors.08810481.css rel=stylesheet><link href=/trial/static/css/index.733eb7dd.css rel=stylesheet></head><body><noscript><strong>We're sorry but trial doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app>app home page</div><script src=/trial/static/js/chunk-vendors.73b9b66f.js></script><script src=/trial/static/js/index.18157136.js></script></body></html>
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/trial/favicon.ico><title>trial</title><style>.box-container{
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box{
+        width: 180px;
+        height: 180px;
+        position: relative;
+        animation: rotate 1s linear infinite;
+        filter:blur(10px);
+      }
+      .item{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        mix-blend-mode: difference;
+      }
+      .item:nth-child(1) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: red;
+      }
+      .item:nth-child(2) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: yellow;
+      }
+      .item:nth-child(3) {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background: blue;
+        
+      }
+      .item:nth-child(4) {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: green;
+      }
+      
+      @keyframes rotate {
+        0%{
+          transform: rotateZ(0);
+        }
+        100%{
+          transform: rotateZ(360deg);
+        }
+      }</style><link href=/trial/static/css/chunk-5b44358a.9a879972.css rel=prefetch><link href=/trial/static/css/chunk-5e808d09.bbb993f6.css rel=prefetch><link href=/trial/static/css/chunk-d2ae3d12.d62525a5.css rel=prefetch><link href=/trial/static/js/chunk-2d0e1782.a6f88a3b.js rel=prefetch><link href=/trial/static/js/chunk-3e15a119.ffd5d77a.js rel=prefetch><link href=/trial/static/js/chunk-5ad2e4dc.88308866.js rel=prefetch><link href=/trial/static/js/chunk-5b44358a.66854a61.js rel=prefetch><link href=/trial/static/js/chunk-5e808d09.8b86640d.js rel=prefetch><link href=/trial/static/js/chunk-6e96eba8.da813fc6.js rel=prefetch><link href=/trial/static/js/chunk-d2ae3d12.0d04a4c9.js rel=prefetch><link href=/trial/static/css/chunk-vendors.08810481.css rel=preload as=style><link href=/trial/static/css/index.733eb7dd.css rel=preload as=style><link href=/trial/static/js/chunk-vendors.73b9b66f.js rel=preload as=script><link href=/trial/static/js/index.e31c18ce.js rel=preload as=script><link href=/trial/static/css/chunk-vendors.08810481.css rel=stylesheet><link href=/trial/static/css/index.733eb7dd.css rel=stylesheet></head><body><noscript><strong>We're sorry but trial doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app><div class=box-container><div class=box><div class=item></div><div class=item></div><div class=item></div><div class=item></div></div></div></div><script src=/trial/static/js/chunk-vendors.73b9b66f.js></script><script src=/trial/static/js/index.e31c18ce.js></script></body></html>
