@@ -30,15 +30,17 @@ var routes = [
     name: 'ease',
     component: () => import('@views/css/ease.vue')
   },
+
+  // 测试页面
   {
-    path: 'testvue',
-    name: 'testvue',
-    component: () => import('@views/testvue.vue')
+    path: 'test/vue',
+    name: 'test-vue',
+    component: () => import('@views/test/vue.vue')
   },
   {
-    path: 'flex-scroll',
-    name: 'flex-scroll',
-    component: () => import('@views/css/flex-scroll.vue')
+    path: 'test/flex-scroll',
+    name: 'test-flex-scroll',
+    component: () => import('@views/test/flex-scroll.vue')
   }
 ]
 

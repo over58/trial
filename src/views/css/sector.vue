@@ -12,10 +12,10 @@
 export default {}
 </script>
 
-<style>
+<style lang="less" scoped>
 .container {
   background: black;
-  height: 500px;
+  height: 100%;
 }
 .box-1 {
   background: pink;
