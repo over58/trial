@@ -5,11 +5,13 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "node build.js",
-    "report": "node build.js --report",
     "lint": "vue-cli-service lint",
-    "post": "node deploy.js"
+    "dll": "vue-cli-service dll",
+    "post": "node deploy.js",
+    "report": "node scripts/build.js --report"
   },
   "dependencies": {
+    "axios": "^0.20.0",
     "clipboard": "^2.0.6",
     "core-js": "^3.6.5",
     "element-ui": "^2.13.2",
@@ -33,6 +35,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.2.2",
+    "fs-extra": "^9.0.1",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
     "lint-staged": "^9.5.0",
@@ -40,13 +43,15 @@
     "ora": "^5.0.0",
     "runjs": "^4.4.2",
     "serve-static": "^1.14.1",
+    "vue-cli-plugin-dll": "^1.1.12",
     "vue-template-compiler": "^2.6.11"
   },
   "gitHooks": {
-    "pre-commit": "lint-staged"
+    "pre-commit": "lint-staged",
+    "commit-msg": "node scripts/verify-commit-msg.js"
   },
   "lint-staged": {
-    "*.{js,jsx,vue}": [
+    "*.{js,jsx,vue}$": [
       "vue-cli-service lint",
       "git add"
     ]

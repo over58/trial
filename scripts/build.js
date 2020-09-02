@@ -1,4 +1,4 @@
-const config = require('./vue.config')
+const config = require('../vue.config')
 const rawArgv = process.argv.slice(2)
 const args = rawArgv.join(' ')
 const { run } = require('runjs')
