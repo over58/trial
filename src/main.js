@@ -4,11 +4,9 @@ import store from './store'
 import router from './router'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-
+import '@/components/index.js'
 // install global component
-import comment from '@/components/comment'
 Vue.use(Element)
-Vue.component('comment', comment)
 Vue.config.productionTip = false
 
 const vm = new Vue({

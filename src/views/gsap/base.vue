@@ -11,7 +11,14 @@
         <button @click="t1.seek('label1')">seek(0.8)</button>
         <button @click="t1.progress(0.66)">progress(0.66)</button>
         <button @click="t1.reverse()">reverse</button>
+        <button @click="showModal">show modal</button>
     </div>
+
+    <modal :hidden.sync="modalHidden" >
+      <div class="modal-content" ref="modal">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus possimus ipsam nobis sit! Ipsum, quo maxime! Quidem illo quo sed, qui commodi error distinctio asperiores eaque, minima, culpa vero impedit!
+      </div>
+    </modal>
   </div>
 </template>
 
@@ -20,7 +27,8 @@ import gsap from 'gsap'
 export default {
   data () {
     return {
-      t1: null
+      t1: null,
+      modalHidden: true
     }
   },
   methods: {
@@ -50,6 +58,14 @@ export default {
 
       // duration（） 包含了+= -=的时间
       console.log(t1.duration())
+    },
+    showModal () {
+      gsap.to(this.$data, { modalHidden: false })
+      var t1 = gsap.timeline()
+      t1.to(this.$refs.modal, { backgroundColor: 'yellow', duration: 0.5 })
+      t1.to(this.$refs.modal, { height: '300px', width: '500px', duration: 0.5 })
+      t1.to(this.$refs.modal, { height: 'auto', width: 'auto', duration: 0.5 })
+      t1.to(this.$refs.modal, { width: '400px', duration: 0.5 })
     }
   }
 }
@@ -77,5 +93,11 @@ export default {
   .button-group{
     margin-top: 50px;
   }
+}
+.modal-content{
+  width:  300px;
+  background: #fff;
+  padding:  20px;
+  border-radius: 10px;
 }
 </style>
