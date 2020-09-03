@@ -7,7 +7,7 @@
     "build": "node build.js",
     "lint": "vue-cli-service lint",
     "dll": "vue-cli-service dll",
-    "post": "node deploy.js",
+    "post": "node scripts/deploy.js",
     "report": "node scripts/build.js --report",
     "new": "node scripts/new.js "
   },
