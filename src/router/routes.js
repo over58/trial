@@ -36,16 +36,17 @@ var routes = [
     component: () => import('@views/gsap/base.vue')
   },
 
+  {
+    path: 'css/zhejiao',
+    name: 'css/zhejiao',
+    component: () => import('@views/css/zhejiao.vue')
+  },
+
   // 测试页面
   {
     path: 'test/vue',
     name: 'test-vue',
     component: () => import('@views/test/vue.vue')
-  },
-  {
-    path: 'test/flex-scroll',
-    name: 'test-flex-scroll',
-    component: () => import('@views/test/flex-scroll.vue')
   }
 ]
 

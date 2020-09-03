@@ -43,7 +43,7 @@ module.exports = {
     dll: {
       // 入口配置
       entry: {
-        libs: ['vue', 'vue-router', 'axios', 'vuex', 'clipboard', 'element-ui']
+        libs: ['vue', 'vue-router', 'axios', 'vuex', 'clipboard', 'element-ui', 'gsap']
       },
       // 输出目录
       output: path.join(__dirname, './public/libs'),
