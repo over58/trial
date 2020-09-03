@@ -30,6 +30,11 @@ var routes = [
     name: 'ease',
     component: () => import('@views/css/ease.vue')
   },
+  {
+    path: 'gsap/base',
+    name: 'gsap-base',
+    component: () => import('@views/gsap/base.vue')
+  },
 
   // 测试页面
   {
