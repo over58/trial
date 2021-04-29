@@ -2,7 +2,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - gh-pages
+      - dev
 
 jobs:
   build-and-deploy:
@@ -37,5 +37,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: master # The branch the action should deploy to.
+          BRANCH: gh-pages # The branch the action should deploy to.
           FOLDER: dist # The folder the action should deploy.
