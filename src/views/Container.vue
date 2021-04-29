@@ -10,7 +10,7 @@
           @select="selectMenuItem"
         >
           <el-menu-item
-            v-for="item in routes"
+            v-for="item in filteredRoutes"
             :key="item.name"
             :index="item.name"
           >
@@ -39,6 +39,9 @@ export default {
   computed: {
     activeRoute () {
       return this.$route.name
+    },
+    filteredRoutes () {
+      return routes.filter(item => item.name || item.path)
     }
   },
   created () {},

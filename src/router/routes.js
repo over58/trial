@@ -1,9 +1,7 @@
 var routes = [
   {
     path: '',
-    name: 'Home',
-    redirect: 'qrcode',
-    component: () => import('@views/npm/qrcode/Index.vue')
+    redirect: 'qrcode'
   },
   {
     path: 'qrcode',
