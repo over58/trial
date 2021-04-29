@@ -40,6 +40,16 @@ var routes = [
     name: 'css/zhejiao',
     component: () => import('@views/css/zhejiao.vue')
   },
+  {
+    path: 'css/flex-basis',
+    name: 'css/flex-basis',
+    component: () => import('@views/css/flex-basis.vue')
+  },
+  {
+    path: 'css/loading',
+    name: 'css/loading',
+    component: () => import('@views/css/loading.vue')
+  },
 
   // 测试页面
   {
